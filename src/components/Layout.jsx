@@ -5,8 +5,11 @@ import { Sidebar } from './Sidebar'
 
 const titles = {
   '/': 'Inicio',
-  '/Comenzar': 'Comenzar',
-  '/Documentacion': 'Documentación',
+  '/comenzar': 'Comenzar',
+  '/documentacion': 'Documentación',
+  '/documentacion/introduccion': 'Introduction',
+  '/documentacion/api-reference': 'API Reference',
+  '/documentacion/examples': 'Examples',
   '/playground': 'Playground',
   '/tables-errors': 'Tables / Errors',
 }
@@ -14,14 +17,18 @@ const titles = {
 export function Layout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
-  const [expanded, setExpanded] = useState(['Comenzar', 'Documentación', 'tables'])
+  const [expanded, setExpanded] = useState(['Comenzar', 'Documentacion', 'tables'])
   const location = useLocation()
 
-  const title = useMemo(() => titles[location.pathname] || 'TranspilerDocs', [location.pathname])
+  const title = useMemo(() => {
+    return titles[location.pathname] || 'ChapinScript Docs'
+  }, [location.pathname])
 
   function handleToggleSection(sectionId) {
     setExpanded((current) =>
-      current.includes(sectionId) ? current.filter((item) => item !== sectionId) : [...current, sectionId],
+      current.includes(sectionId)
+        ? current.filter((item) => item !== sectionId)
+        : [...current, sectionId],
     )
   }
 
@@ -44,6 +51,7 @@ export function Layout({ children }) {
           >
             {sidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
+
           <span className="text-sm text-slate-600">{title}</span>
         </header>
 

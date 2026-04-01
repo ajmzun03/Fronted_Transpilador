@@ -35,7 +35,7 @@ export function HomeView() {
 
         <div className="mb-14 flex flex-wrap items-center justify-center gap-4">
           <Link
-            to="/Comenzar"
+            to="/comenzar"
             className="inline-flex items-center gap-2 rounded-2xl bg-brand-500 px-7 py-4 text-lg font-medium text-white transition hover:bg-brand-600"
           >
             Cómo usar el transpilador
@@ -72,7 +72,10 @@ export function HomeView() {
           <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
             Aprende a usar el transpilador con guías detalladas y referencias de la API.
           </p>
-          <Link to="/Documentacion" className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600">
+          <Link
+            to="/documentacion/introduccion"
+            className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600"
+          >
             Ir a la documentación →
           </Link>
         </article>
@@ -82,7 +85,10 @@ export function HomeView() {
           <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
             Consulta los códigos de error léxicos, sintácticos y semánticos con sus soluciones.
           </p>
-          <Link to="/tables-errors" className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600">
+          <Link
+            to="/tables-errors"
+            className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600"
+          >
             Ir a tabla de errores →
           </Link>
         </article>

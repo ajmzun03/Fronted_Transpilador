@@ -11,9 +11,9 @@ const stepsLeft = [
 ]
 
 const stepsRight = [
-  'Open the playground in your browser',
-  'Write or paste your source code',
-  'See results instantly in real-time',
+  'Ejecutar de manera online',
+  'Escribe o pega tu código fuente',
+  'Vea los resultados al instante y en tiempo real',
 ]
 
 export function GetStartedView() {
@@ -57,9 +57,9 @@ export function GetStartedView() {
           <div className="mb-6 inline-flex rounded-2xl bg-emerald-100 p-4 text-emerald-600">
             <Globe className="h-7 w-7" />
           </div>
-          <h2 className="text-4xl font-medium text-slate-900">Use Online Playground</h2>
+          <h2 className="text-4xl font-medium text-slate-900">Use el compilador online</h2>
           <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
-            Try the transpiler directly in your browser without any installation required.
+            Prueba el transpilador directamente en tu navegador sin necesidad de instalación.
           </p>
 
           <ol className="mt-8 space-y-5">
@@ -75,7 +75,7 @@ export function GetStartedView() {
 
           <button className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-6 py-4 text-lg font-medium text-white transition hover:bg-emerald-600">
             <Globe className="h-5 w-5" />
-            Open Playground
+            Ejecuta el compilador online
           </button>
         </article>
       </div>
@@ -83,10 +83,10 @@ export function GetStartedView() {
       <article className="mt-12 rounded-3xl border border-slate-200 bg-white p-8 shadow-soft">
         <div className="mb-6 flex items-center gap-3 text-slate-800">
           <TerminalSquare className="h-7 w-7" />
-          <h2 className="text-4xl font-medium">Command Line Installation</h2>
+          <h2 className="text-4xl font-medium">Instalación en línea de comandos</h2>
         </div>
         <p className="mb-8 text-lg leading-8 text-slate-600">
-          Install the transpiler globally via npm or yarn.
+          Instala el transpilador globalmente mediante npm o yarn.
         </p>
 
         <div className="space-y-6">
