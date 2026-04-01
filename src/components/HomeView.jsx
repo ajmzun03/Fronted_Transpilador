@@ -35,7 +35,7 @@ export function HomeView() {
 
         <div className="mb-14 flex flex-wrap items-center justify-center gap-4">
           <Link
-            to="/get-started"
+            to="/Comenzar"
             className="inline-flex items-center gap-2 rounded-2xl bg-brand-500 px-7 py-4 text-lg font-medium text-white transition hover:bg-brand-600"
           >
             Cómo usar el transpilador
@@ -72,7 +72,7 @@ export function HomeView() {
           <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
             Aprende a usar el transpilador con guías detalladas y referencias de la API.
           </p>
-          <Link to="/documentation" className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600">
+          <Link to="/Documentacion" className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600">
             Ir a la documentación →
           </Link>
         </article>

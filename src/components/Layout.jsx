@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 
 const titles = {
-  '/': 'Home',
-  '/get-started': 'Get Started',
-  '/documentation': 'Documentation',
+  '/': 'Inicio',
+  '/Comenzar': 'Comenzar',
+  '/Documentacion': 'Documentación',
   '/playground': 'Playground',
   '/tables-errors': 'Tables / Errors',
 }
@@ -14,7 +14,7 @@ const titles = {
 export function Layout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
-  const [expanded, setExpanded] = useState(['get-started', 'documentation', 'tables'])
+  const [expanded, setExpanded] = useState(['Comenzar', 'Documentación', 'tables'])
   const location = useLocation()
 
   const title = useMemo(() => titles[location.pathname] || 'TranspilerDocs', [location.pathname])

@@ -3,29 +3,29 @@ import { NavLink } from 'react-router-dom'
 
 const menuItems = [
   {
-    id: 'home',
-    label: 'Home',
+    id: 'Inicio',
+    label: 'Inicio',
     to: '/',
     icon: Home,
   },
   {
-    id: 'get-started',
-    label: 'Get Started',
-    to: '/get-started',
+    id: 'Comenzar',
+    label: 'Comenzar',
+    to: '/Comenzar',
     icon: PlayCircle,
     children: [
-      { label: 'VS Code Extension', to: '/get-started#vscode' },
-      { label: 'Online Playground', to: '/get-started#online-playground' },
+      { label: 'VS Code Extension', to: '/Comenzar#vscode' },
+      { label: 'Online Playground', to: '/Comenzar#online-playground' },
     ],
   },
   {
-    id: 'documentation',
-    label: 'Documentation',
-    to: '/documentation',
+    id: 'Documentacion',
+    label: 'Documentación',
+    to: '/Documentacion',
     icon: BookOpen,
     children: [
-      { label: 'Introduction', to: '/documentation#introduction' },
-      { label: 'API Reference', to: '/documentation#api-reference' },
+      { label: 'Introduction', to: '/Documentacion#introduction' },
+      { label: 'API Reference', to: '/Documentacion#api-reference' },
       { label: 'Examples', to: '/documentation#examples' },
     ],
   },
@@ -55,13 +55,13 @@ export function Sidebar({ isOpen, expanded, onToggleSection, searchQuery, setSea
     >
       <div className="flex h-full flex-col">
         <div className="border-b border-slate-200 px-6 py-6">
-          <h1 className="text-[18px] font-medium text-slate-900">TranspilerDocs</h1>
+          <h1 className="text-[18px] font-medium text-slate-900">Documentación de ChapinScript</h1>
           <div className="relative mt-5">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
             <input
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
-              placeholder="Search documentation..."
+              placeholder="Buscar en documentación..."
               className="w-full rounded-xl border border-slate-300 bg-white py-2.5 pl-10 pr-4 text-sm text-slate-700 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
             />
           </div>

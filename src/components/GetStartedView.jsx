@@ -5,9 +5,9 @@ const npmCode = 'npm install -g @transpiler/cli'
 const yarnCode = 'yarn global add @transpiler/cli'
 
 const stepsLeft = [
-  'Open VS Code Extensions panel',
-  'Search for "Transpiler Framework"',
-  'Click Install and reload VS Code',
+  'Abrir el panel de extensiones de VS Code',
+  'Busca por "Transpilador Framework"',
+  'Click en instalar y refresca VS Code',
 ]
 
 const stepsRight = [
@@ -20,9 +20,9 @@ export function GetStartedView() {
   return (
     <section className="mx-auto max-w-7xl px-8 py-14 lg:px-10">
       <div className="max-w-3xl">
-        <h1 className="text-5xl font-medium text-slate-900">Get Started</h1>
+        <h1 className="text-5xl font-medium text-slate-900">¿Cómo comenzar?</h1>
         <p className="mt-4 text-xl leading-9 text-slate-600">
-          Choose your preferred way to start using the transpiler.
+          Elige tu método preferido para empezar a usar el transpilador.
         </p>
       </div>
 
@@ -31,9 +31,9 @@ export function GetStartedView() {
           <div className="mb-6 inline-flex rounded-2xl bg-brand-50 p-4 text-brand-500">
             <FileCode2 className="h-7 w-7" />
           </div>
-          <h2 className="text-4xl font-medium text-slate-900">Use with VS Code</h2>
+          <h2 className="text-4xl font-medium text-slate-900">Úsalo con VS Code</h2>
           <p className="mt-4 max-w-xl text-lg leading-8 text-slate-600">
-            Install our VS Code extension for seamless integration with your development environment.
+            Instala nuestra extensión para VS Code y disfruta de una integración perfecta con tu entorno de desarrollo.
           </p>
 
           <ol className="mt-8 space-y-5">
@@ -49,7 +49,7 @@ export function GetStartedView() {
 
           <button className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-brand-500 px-6 py-4 text-lg font-medium text-white transition hover:bg-brand-600">
             <Download className="h-5 w-5" />
-            Install Extension
+            Instalar extensión
           </button>
         </article>
 

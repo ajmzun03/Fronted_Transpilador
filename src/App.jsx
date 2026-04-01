@@ -11,8 +11,8 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/get-started" element={<GetStartedView />} />
-        <Route path="/documentation" element={<DocumentationView />} />
+        <Route path="/Comenzar" element={<GetStartedView />} />
+        <Route path="/Documentacion" element={<DocumentationView />} />
         <Route path="/playground" element={<PlaygroundView />} />
         <Route path="/tables-errors" element={<TablesView />} />
       </Routes>
