@@ -2,6 +2,8 @@ import { Menu, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
+import docs from '../data/docs.json'
+
 
 const titles = {
   '/': 'Inicio',
@@ -21,8 +23,14 @@ export function Layout({ children }) {
   const location = useLocation()
 
   const title = useMemo(() => {
-    return titles[location.pathname] || 'ChapinScript Docs'
-  }, [location.pathname])
+  if (location.pathname.startsWith('/documentacion')) {
+    const slug = location.pathname.split('/')[2]
+    const doc = docs.find((d) => d.slug === slug)
+    return doc?.title || 'Documentación'
+  }
+
+  return titles[location.pathname] || 'ChapinScript Docs'
+}, [location.pathname])
 
   function handleToggleSection(sectionId) {
     setExpanded((current) =>
