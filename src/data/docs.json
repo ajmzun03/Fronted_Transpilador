@@ -1,0 +1,60 @@
+[
+  {
+    "slug": "introduccion",
+    "title": "Introduction",
+    "category": "Documentación",
+    "description": "Complete guide to using the Transpiler Framework.",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Introduction"
+      },
+      {
+        "type": "paragraph",
+        "value": "The Transpiler Framework is a modern, extensible code transformation tool designed for JavaScript and TypeScript projects."
+      },
+      {
+        "type": "paragraph",
+        "value": "It provides powerful features for code compilation, optimization, and transformation."
+      }
+    ]
+  },
+  {
+    "slug": "api-reference",
+    "title": "API Reference",
+    "category": "Documentación",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Key Features"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Multi-target compilation",
+          "TypeScript support",
+          "Plugin system",
+          "Source maps",
+          "Error reporting"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "examples",
+    "title": "Examples",
+    "category": "Documentación",
+    "content": [
+      {
+        "type": "code",
+        "label": "Basic Usage",
+        "value": "import { Transpiler } from '@transpiler/core';\nconst t = new Transpiler();"
+      },
+      {
+        "type": "code",
+        "label": "Advanced",
+        "value": "const t = new Transpiler({ target: 'es2020' });"
+      }
+    ]
+  }
+]

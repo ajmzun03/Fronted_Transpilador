@@ -9,6 +9,7 @@ import {
   Search,
 } from 'lucide-react'
 import { NavLink, useLocation } from 'react-router-dom'
+import docs from '../data/docs.json'
 
 const menuItems = [
   {
@@ -32,11 +33,6 @@ const menuItems = [
     label: 'Documentación',
     to: '/documentacion/introduccion',
     icon: BookOpen,
-    children: [
-      { label: 'Introduction', to: '/documentacion/introduccion' },
-      { label: 'API Reference', to: '/documentacion/api-reference' },
-      { label: 'Examples', to: '/documentacion/examples' },
-    ],
   },
   {
     id: 'playground',
@@ -59,6 +55,30 @@ const menuItems = [
 
 export function Sidebar({ isOpen, expanded, onToggleSection, searchQuery, setSearchQuery }) {
   const location = useLocation()
+
+  const processedMenuItems = menuItems.map((item) => {
+    if (item.id === 'Documentacion') {
+      const query = searchQuery.trim().toLowerCase()
+
+      const filteredDocs = query
+        ? docs.filter(
+            (doc) =>
+              doc.title.toLowerCase().includes(query) ||
+              JSON.stringify(doc.content).toLowerCase().includes(query),
+          )
+        : docs
+
+      return {
+        ...item,
+        children: filteredDocs.map((doc) => ({
+          label: doc.title,
+          to: `/documentacion/${doc.slug}`,
+        })),
+      }
+    }
+
+    return item
+  })
 
   function isParentActive(item) {
     if (item.id === 'Documentacion') {
@@ -101,14 +121,16 @@ export function Sidebar({ isOpen, expanded, onToggleSection, searchQuery, setSea
 
         <nav className="sidebar-scrollbar flex-1 overflow-y-auto px-4 py-5">
           <div className="space-y-2">
-            {menuItems
+            {processedMenuItems
               .filter((item) => {
                 if (!searchQuery.trim()) return true
+
                 const query = searchQuery.toLowerCase()
                 const selfMatch = item.label.toLowerCase().includes(query)
                 const childMatch = item.children?.some((child) =>
                   child.label.toLowerCase().includes(query),
                 )
+
                 return selfMatch || childMatch
               })
               .map((item) => {
