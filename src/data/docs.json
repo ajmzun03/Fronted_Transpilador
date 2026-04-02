@@ -16,9 +16,150 @@
       {
         "type": "paragraph",
         "value": "It provides powerful features for code compilation, optimization, and transformation."
+      },
+      {
+        "type":"code",
+        "label":"Ejemplo",
+        "value":"otro ejemplo"
+      },
+      {
+        "type":"heading",
+        "value":"Clasico parrafo"
       }
     ]
   },
+  {
+  "slug": "prueba_clasica",
+  "title": "chotear",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "📌 Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada chotear en ChapinScript se utiliza para mostrar información en la consola de salida, siendo el principal mecanismo de comunicación entre el programa y el usuario durante la ejecución."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite desplegar valores, resultados de expresiones, variables y mensajes de depuración. Su uso es fundamental tanto en programas simples como en sistemas complejos, ya que facilita la visualización del flujo de ejecución y el estado interno del programa."
+    },
+    {
+      "type": "paragraph",
+      "value":"A nivel conceptual, chotear representa una operación de salida estándar (standard output), lo que significa que todo lo que se envía mediante esta instrucción será mostrado en el entorno de ejecución, ya sea una terminal, consola o interfaz integrada."
+    },
+    {
+      "type": "heading",
+      "value": "⚙️ Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de chotear es: \n➣ Mostrar mensajes al usuario\n\t ➣Imprimir resultados de cálculos\n➣Depurar programas (debugging)\n➣Verificar valores de variables en tiempo de ejecución"
+    },
+    {
+      "type": "heading",
+      "value": "🧾 Sintaxis"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(valor);"
+    },
+    {
+      "type": "paragraph",
+      "value": "O en una forma más felxible:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear('expresion')+18;//es para saber que hace;"
+    },
+    {
+      "type": "heading",
+      "value": "🧪 Ejemplos de uso"
+    },
+    {
+      "type":"subtitle",
+      "value": "1. Imprimir texto simple"
+
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(valor);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "25"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value": "2. Imprimir una variable"
+
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "cabal edad = 25; \nchotear(edad);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "25"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value":"3. Imprimir una expresión"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(5 + 3 * 2);"
+    },
+    {
+      "type":"paragraph",
+      "value":"Salida"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "11"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    }
+  ]
+  },
+
+
+
+
+
+
+
+
+
+
   {
     "slug": "chotear",
     "title": "chotear",
@@ -30,9 +171,13 @@
         "value": "Examples"
       },
       {
+        "type":"subtitle",
+        "value":"Texto de ejemplo"
+      },
+      {
         "type": "code",
         "label": "Sintaxis básica",
-        "value": "Chotear(\"texto en pantalla\");"
+        "value": "chotear(\"texto en pantalla\");"
       }
     ]
   },

@@ -1,0 +1,70 @@
+{
+  "keywords": [
+    "chotear",
+    "simon",
+    "chapus",
+    "chiripa",
+    "wasa",
+    "porsiacaso",
+    "vuelta",
+    "seguile",
+    "dale",
+    "cuaje",
+    "chanin",
+    "vonos",
+    "fijo",
+    "banda",
+    "vos",
+    "calale",
+    "atrapalo",
+    "morongazo",
+    "barrio",
+    "caquero",
+    "shute",
+    "firme",
+    "estrenar"
+  ],
+  "types": [
+    "cabal",
+    "pisto",
+    "pistazo",
+    "cachito",
+    "casaca",
+    "nimais",
+    "chisme"
+  ],
+  "literals": [
+    "deplano",
+    "nel",
+    "inutil"
+  ],
+  "exceptions": [
+    "clavo",
+    "granclavo"
+  ],
+  "builtins": [
+    "chotear",
+    "traer",
+    "meter",
+    "quepaso"
+  ],
+  "operators": [
+    "==",
+    "!=",
+    "<=",
+    ">=",
+    "&&",
+    "||",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    "=",
+    "<",
+    ">",
+    "!"
+  ],
+  "brackets": ["(", ")", "{", "}", "[", "]"],
+  "delimiters": [".", ",", ";", ":"]
+}
