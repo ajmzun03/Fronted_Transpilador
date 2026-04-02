@@ -1,0 +1,787 @@
+[
+  {
+    "slug": "introduccion",
+    "title": "Introduction",
+    "category": "Documentación",
+    "description": "Complete guide to using the Transpiler Framework.",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Introduction"
+      },
+      {
+        "type": "paragraph",
+        "value": "The Transpiler Framework is a modern, extensible code transformation tool designed for JavaScript and TypeScript projects."
+      },
+      {
+        "type": "paragraph",
+        "value": "It provides powerful features for code compilation, optimization, and transformation."
+      }
+    ]
+  },
+  {
+    "slug": "chotear",
+    "title": "chotear",
+    "category": "Documentación",
+    "description": "Mostrar en consola",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "Chotear(\"texto en pantalla\");"
+      }
+    ]
+  },
+  {
+    "slug": "simon",
+    "title": "simon",
+    "category": "Documentación",
+    "description": "Evalúa una condición, estructura básica/clásica",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "Simon(condicion)"
+      }
+    ]
+  },
+  {
+    "slug": "simon-ternario",
+    "title": "simon (ternario)",
+    "category": "Documentación",
+    "description": "Evalúa una condición, estructura ternaria",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chisme resultado = (edad >= 18) ? \"Mayor\" : \"Menor\";"
+      }
+    ]
+  },
+  {
+    "slug": "chapus",
+    "title": "chapus",
+    "category": "Documentación",
+    "description": "Entonces",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "Simon (condicion){\n  // ejecuta si es verdadero\n} chapus {\n  // ejecuta si es falso\n}"
+      }
+    ]
+  },
+  {
+    "slug": "chiripa",
+    "title": "chiripa",
+    "category": "Documentación",
+    "description": "Menú de opciones",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chiripa (opcion) {\n    wasa 1:\n        // código\n        cuaje;\n    wasa 2:\n        // código\n        cuaje;\n    porsiacaso:\n        // Si no fue ni 1 ni 2\n}"
+      }
+    ]
+  },
+  {
+    "slug": "wasa",
+    "title": "wasa",
+    "category": "Documentación",
+    "description": "Opciones dentro del menú",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chiripa (opcion) {\n    wasa 1:\n        // código\n        cuaje;\n    wasa 2:\n        // código\n        cuaje;\n    porsiacaso:\n        // Si no fue ni 1 ni 2\n}"
+      }
+    ]
+  },
+  {
+    "slug": "porsiacaso",
+    "title": "porsiacaso",
+    "category": "Documentación",
+    "description": "En caso no exista opción en el menú",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chiripa (opcion) {\n    wasa 1:\n        // código\n        cuaje;\n    wasa 2:\n        // código\n        cuaje;\n    porsiacaso:\n        // Si no fue ni 1 ni 2\n}"
+      }
+    ]
+  },
+  {
+    "slug": "vuelta",
+    "title": "vuelta",
+    "category": "Documentación",
+    "description": "Bucle que se repite n veces. Siempre y cuando sepamos cuanto vale n",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "vuelta (cabal i = 0; i < 10; i++) {\n    // Se repite 10 veces\n}"
+      }
+    ]
+  },
+  {
+    "slug": "seguile",
+    "title": "seguile",
+    "category": "Documentación",
+    "description": "Repite el bucle mientras una condición sea verdadera",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "seguile (condicion) {\n    // Se repite mientras sea cierto\n}"
+      }
+    ]
+  },
+  {
+    "slug": "dale",
+    "title": "dale",
+    "category": "Documentación",
+    "description": "Se ejecuta el bucle al menos una vez antes de revisar la condición",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "dale {\n    // código\n} seguile (condicion);"
+      }
+    ]
+  },
+  {
+    "slug": "cuaje",
+    "title": "cuaje",
+    "category": "Documentación",
+    "description": "Para salir de un bucle o de un switch",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cuaje;"
+      }
+    ]
+  },
+  {
+    "slug": "chanin",
+    "title": "chanin",
+    "category": "Documentación",
+    "description": "Se salta lo que queda del bucle actual y para directamente a la siguente vuelta",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "simon (i == 5) chanin;"
+      }
+    ]
+  },
+  {
+    "slug": "vonos",
+    "title": "vonos",
+    "category": "Documentación",
+    "description": "Delvuelve el resultado de una función",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "vonos ();"
+      }
+    ]
+  },
+  {
+    "slug": "cabal",
+    "title": "cabal",
+    "category": "Documentación",
+    "description": "Para números enteros",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cabal miVariable = 5;"
+      }
+    ]
+  },
+  {
+    "slug": "cabal-array",
+    "title": "cabal []",
+    "category": "Documentación",
+    "description": "Array de tipo enter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cabal misNumeros[5] = {1, 2, 3, 4, 5};"
+      }
+    ]
+  },
+  {
+    "slug": "pisto",
+    "title": "pisto",
+    "category": "Documentación",
+    "description": "Para números con decimales sensillos",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pisto miVariable = cociente;"
+      }
+    ]
+  },
+  {
+    "slug": "pisto-array",
+    "title": "pisto []",
+    "category": "Documentación",
+    "description": "Array de tipo decimal",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pisto misNumeros[3] = {10.5,99.99, 5.25};"
+      }
+    ]
+  },
+  {
+    "slug": "pistazo",
+    "title": "pistazo",
+    "category": "Documentación",
+    "description": "Para números con decimales de alta presición",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pistazo miVariable = residuos;"
+      }
+    ]
+  },
+  {
+    "slug": "pistazo-array",
+    "title": "pistazo []",
+    "category": "Documentación",
+    "description": "Array de tipo decimal preciso",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pistazo miDistancia[2] = {345.6789, 12.3456};"
+      }
+    ]
+  },
+  {
+    "slug": "cachito",
+    "title": "cachito",
+    "category": "Documentación",
+    "description": "Para un solo caracter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cachito miVariable = seccion;"
+      }
+    ]
+  },
+  {
+    "slug": "cachito-array",
+    "title": "cachito []",
+    "category": "Documentación",
+    "description": "Array de tipo caracter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cachito misIniciales[4] = {'P', 'R', 'O', 'Y', 'E', 'C', 'T'};"
+      }
+    ]
+  },
+  {
+    "slug": "casaca",
+    "title": "casaca",
+    "category": "Documentación",
+    "description": "Para los valores lógicos como verdadero/falso",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "casaca miVariable = estado;"
+      }
+    ]
+  },
+  {
+    "slug": "casaca-array",
+    "title": "casaca []",
+    "category": "Documentación",
+    "description": "Array de tipo bool",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "casaca respuestas[3] = {true, false, true};"
+      }
+    ]
+  },
+  {
+    "slug": "nimais",
+    "title": "nimais",
+    "category": "Documentación",
+    "description": "Para funciones que no devulven nungún valor",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "banda Robot {\n  caquero:\n    cabal energia;\n  barrio:\n    Robot() { vos->energia = 100; }\n    cabal traerEnergia() { vonos vos->energia; }\n    nimais cargar(cabal extra) {\n        calale {\n            simon (extra < 0) morongazo GranClavo(\"Energia negativa\");\n            vos->energia += extra;\n        } atrapalo (GranClavo e) {\n            chotear(e.quepaso());\n        }\n    }\n};"
+      }
+    ]
+  },
+  {
+    "slug": "chisme",
+    "title": "chisme",
+    "category": "Documentación",
+    "description": "Tipo de dato para guardar cadenas de texto, palabras o frases completas",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chisme = nombre;"
+      }
+    ]
+  },
+  {
+    "slug": "chisme-array",
+    "title": "chisme []",
+    "category": "Documentación",
+    "description": "Array de tipo texto",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chisme misNumeros[5] = {\"Hola\", \"Mundo\", \"Ejemplo\", \"de\", \"uso\"};"
+      }
+    ]
+  },
+  {
+    "slug": "fijo",
+    "title": "fijo",
+    "category": "Documentación",
+    "description": "No cambia de valor",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "fijo pistazo PI = 3.14159;"
+      }
+    ]
+  },
+  {
+    "slug": "banda",
+    "title": "banda",
+    "category": "Documentación",
+    "description": "Molde para crear objetos",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "banda Robot {\n  caquero:\n    cabal energia;\n  barrio:\n    Robot() { vos->energia = 100; }\n    cabal traerEnergia() { vonos vos->energia; }\n    nimais cargar(cabal extra) {\n        calale {\n            simon (extra < 0) morongazo GranClavo(\"Energia negativa\");\n            vos->energia += extra;\n        } atrapalo (GranClavo e) {\n            chotear(e.quepaso());\n        }\n    }\n};"
+      }
+    ]
+  },
+  {
+    "slug": "vos",
+    "title": "vos",
+    "category": "Documentación",
+    "description": "Es un puntero que se usa dentro de una clase",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "banda Robot {\n  caquero:\n    cabal energia;\n  barrio:\n    Robot() { vos->energia = 100; }\n    cabal traerEnergia() { vonos vos->energia; }\n    nimais cargar(cabal extra) {\n        calale {\n            simon (extra < 0) morongazo GranClavo(\"Energia negativa\");\n            vos->energia += extra;\n        } atrapalo (GranClavo e) {\n            chotear(e.quepaso());\n        }\n    }\n};"
+      }
+    ]
+  },
+  {
+    "slug": "calale",
+    "title": "calale",
+    "category": "Documentación",
+    "description": "Define un bloque de código donde sospechamos que pueda ocurrir un error",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "calale {\n    simon (error) throw 404;\n} atrapalo (int e) {\n    // Aquí se maneja el error\n}"
+      }
+    ]
+  },
+  {
+    "slug": "atrapalo",
+    "title": "atrapalo",
+    "category": "Documentación",
+    "description": "Atrapa el error que se detectó",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "calale {\n    simon (error) throw 404;\n} atrapalo (int e) {\n    // Aquí se maneja el error\n}"
+      }
+    ]
+  },
+  {
+    "slug": "morongazo",
+    "title": "morongazo",
+    "category": "Documentación",
+    "description": "Se usa para avisar manualmente que algo salió mal",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "barrio banda Cajero {\n    cabal saldo = 500;\n\n    barrio nimais retirarPisto(cabal cantidad) {\n        simon (cantidad > saldo) {\n            morongazo estrenar GranClavo(\"No tenes tanto pisto chavo\");\n        }\n        saldo = saldo - cantidad;\n        chotear(\"Retiro exitoso. Te queda: \" + saldo);\n    }\n}"
+      }
+    ]
+  },
+  {
+    "slug": "barrio",
+    "title": "barrio",
+    "category": "Documentación",
+    "description": "Para definir si es público o private un método/función, clase etc.",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "barrio banda Manejador {\n\n    barrio nimais procesarDato(cabal numero) {\n        calale {\n            simon (numero == 0) {\n                morongazo estrenar GranClavo(\"¡No seas así, vos! No se puede dividir por cero.\");\n            }\n\n            cabal resultado = 100 / numero;\n            chotear(\"El resultado es: \" + resultado);\n\n        } atrapalo (GranClavo e) {\n            chotear(\"¡Se armó un GranClavo!: \" + e.quepaso());\n        }\n    }\n}"
+      }
+    ]
+  },
+  {
+    "slug": "caquero",
+    "title": "caquero",
+    "category": "Documentación",
+    "description": "Define que los métodos o atributos son exclusivos de esa clase. Solo los de la misma clase los pueden ver; los de afuera son shutes y no tienen permiso.",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "caquero nimais calcularAlgoSecreto() {\n    // código secreto\n}"
+      }
+    ]
+  },
+  {
+    "slug": "deplano",
+    "title": "deplano",
+    "category": "Documentación",
+    "description": "Valor lógico que indica que una condición es verdadera",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "casaca estaLloviendo = deplano;"
+      }
+    ]
+  },
+  {
+    "slug": "nel",
+    "title": "nel",
+    "category": "Documentación",
+    "description": "Valor lógico que indica que una condición es falsa",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "casaca hayPisto = nel;"
+      }
+    ]
+  },
+  {
+    "slug": "shute",
+    "title": "shute",
+    "category": "Documentación",
+    "description": "Para traer librerías externas",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "shute \"nombre_de_Libreria.h\""
+      }
+    ]
+  },
+  {
+    "slug": "traer",
+    "title": "traer",
+    "category": "Documentación",
+    "description": "Para el método Getter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cabal traerEnergia() { vonos vos->energia; }"
+      }
+    ]
+  },
+  {
+    "slug": "meter",
+    "title": "meter",
+    "category": "Documentación",
+    "description": "Para el método Setter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "nimais meterEnergia(cabal e) { vos->energia = e; }"
+      }
+    ]
+  },
+  {
+    "slug": "firme",
+    "title": "firme",
+    "category": "Documentación",
+    "description": "Usar algo como firme",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "firme cabal contadorTotal = 0;"
+      }
+    ]
+  },
+  {
+    "slug": "inutil",
+    "title": "inutil",
+    "category": "Documentación",
+    "description": "Define algo vacío",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "Robot* miRobot = inutil;"
+      }
+    ]
+  },
+  {
+    "slug": "estrenar",
+    "title": "estrenar",
+    "category": "Documentación",
+    "description": "Para crear una nueva instancia de un objeto o error",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "morongazo estrenar GranClavo(\"...\");"
+      }
+    ]
+  },
+  {
+    "slug": "clavo",
+    "title": "clavo",
+    "category": "Documentación",
+    "description": "La clase base de todos los errores",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "atrapalo (Clavo e) { ... }"
+      }
+    ]
+  },
+  {
+    "slug": "granclavo",
+    "title": "granclavo",
+    "category": "Documentación",
+    "description": "Un error que pasa de la nada mientras corre el codigo",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "estrenar GranClavo(\"Se tronó esto\");"
+      }
+    ]
+  },
+  {
+    "slug": "quepaso",
+    "title": ".quepaso()",
+    "category": "Documentación",
+    "description": "Muestra el \"que paso\" (mensaje) de por qué trono el código",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "barrio nimais procesarDato(cabal numero) {\n    calale {\n        simon (numero == 0) {\n            morongazo estrenar GranClavo(\"No podés dividir entre la nada, vos.\");\n        }\n    } atrapalo (GranClavo e) {\n        chotear(\"Fijate que: \" + e.quepaso());\n    }\n}"
+      }
+    ]
+  }
+]
