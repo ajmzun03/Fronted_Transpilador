@@ -8,8 +8,7 @@ import docs from '../data/docs.json'
 const titles = {
   '/': 'Inicio',
   '/comenzar': 'Comenzar',
-  '/documentacion': 'Documentación',
-  '/documentacion/introduccion': 'Introduction',
+  '/documentacion': 'chotear',
   '/documentacion/api-reference': 'API Reference',
   '/documentacion/examples': 'Examples',
   '/playground': 'Playground',
