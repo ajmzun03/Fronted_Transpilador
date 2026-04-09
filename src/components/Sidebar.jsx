@@ -31,7 +31,7 @@ const menuItems = [
   {
     id: 'Documentacion',
     label: 'Documentación',
-    to: '/documentacion/introduccion',
+    to: '/Documentacion/chotear',
     icon: BookOpen,
   },
   {

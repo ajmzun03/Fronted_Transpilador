@@ -73,7 +73,7 @@ export function HomeView() {
             Aprende a usar el transpilador con guías detalladas y referencias de la API.
           </p>
           <Link
-            to="/documentacion/introduccion"
+            to="/documentacion/chotear"
             className="mt-6 inline-flex text-lg font-medium text-brand-500 hover:text-brand-600"
           >
             Ir a la documentación →
