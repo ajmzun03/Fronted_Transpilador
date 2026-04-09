@@ -1,0 +1,2232 @@
+[
+  {
+  "slug": "chotear",
+  "title": "chotear",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada chotear en ChapinScript se utiliza para mostrar información en la consola de salida, siendo el principal mecanismo de comunicación entre el programa y el usuario durante la ejecución."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite desplegar valores, resultados de expresiones, variables y mensajes de depuración. Su uso es fundamental tanto en programas simples como en sistemas complejos, ya que facilita la visualización del flujo de ejecución y el estado interno del programa."
+    },
+    {
+      "type": "paragraph",
+      "value":"A nivel conceptual, chotear representa una operación de salida estándar (standard output), lo que significa que todo lo que se envía mediante esta instrucción será mostrado en el entorno de ejecución, ya sea una terminal, consola o interfaz integrada."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de chotear es: \n➣ Mostrar mensajes al usuario\n\t ➣Imprimir resultados de cálculos\n➣Depurar programas (debugging)\n➣Verificar valores de variables en tiempo de ejecución"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(valor);"
+    },
+    {
+      "type": "paragraph",
+      "value": "O en una forma más felxible:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear('expresion');"
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type":"subtitle",
+      "value": "1. Imprimir texto simple"
+
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(valor);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "25"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value": "2. Imprimir una variable"
+
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "cabal edad = 25; \nchotear(edad);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "25"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value":"3. Imprimir una expresión"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chotear(5 + 3 * 2);"
+    },
+    {
+      "type":"paragraph",
+      "value":"Salida"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "11"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value":"4. Concatenación de valores"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "chisme nombre = 'Luis';\ncabal edad = 30;\n\nchotear('Nombre: ' + nombre + ', Edad: ' + edad );"
+    },
+    {
+      "type":"paragraph",
+      "value":"Salida"
+    },
+    {
+      "type": "code",
+      "label":"‹/› chapinScript",
+      "value": "Nombre: Luis, Edad: 30"
+    },
+    {
+      "type":"paragraph",
+      "value":"________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type":"subtitle",
+      "value":"Resumen"
+    },
+    {
+      "type":"paragraph",
+      "value":"CHOTEAR es una de las instrucciones más esenciales en ChapinScript, ya que permite visualizar información durante la ejecución del programa. Su diseño busca simplificar la salida en comparación con C++, manteniendo la funcionalidad pero reduciendo la complejidad sintáctica.Es una herramienta clave tanto para interacción con el usuario como para depuración, y su uso correcto mejora significativamente la comprensión y mantenimiento del código."
+    }
+  ]
+  },
+  {
+  "slug": "simon",
+  "title": "simon",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada simon en ChapinScript se utiliza para evaluar una condición y ejecutar un bloque de código únicamente si dicha condición es verdadera. Es una de las estructuras de control más fundamentales en la programación."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite tomar decisiones dentro del flujo del programa, controlando qué instrucciones deben ejecutarse en función de resultados lógicos. Es equivalente a la estructura if en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, simon representa una bifurcación en el flujo de ejecución, donde el programa puede seguir diferentes caminos dependiendo del valor de una expresión booleana."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de simon es: \n➣ Evaluar condiciones lógicas\n➣ Controlar el flujo del programa\n➣ Ejecutar código de forma condicional\n➣ Permitir la toma de decisiones dentro del programa"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "simon(condicion){\n    // instrucciones\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "También puede combinarse con chapus para manejar casos alternativos."
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "simon(condicion){\n    // verdadero\n} chapus {\n    // falso\n}"
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Condición simple"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal edad = 18;\n\nsimon(edad >= 18){\n    chotear('Sos mayor de edad');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Sos mayor de edad"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Uso con chapus"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal edad = 15;\n\nsimon(edad >= 18){\n    chotear('Mayor de edad');\n} chapus {\n    chotear('Menor de edad');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Menor de edad"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Condiciones compuestas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal edad = 20;\ncasaca tieneDPI = deplano;\n\nsimon(edad >= 18 && tieneDPI){\n    chotear('Puede votar');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Puede votar"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Condiciones anidadas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal nota = 75;\n\nsimon(nota >= 60){\n    simon(nota >= 90){\n        chotear('Excelente');\n    } chapus {\n        chotear('Aprobado');\n    }\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Aprobado"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "SIMON es una estructura fundamental en ChapinScript que permite controlar el flujo del programa mediante la evaluación de condiciones. Su uso es esencial para implementar lógica de decisión, validaciones y comportamiento dinámico. Inspirado en el if de C++, simon simplifica la sintaxis manteniendo la potencia necesaria para construir programas complejos."
+    }
+  ]
+},
+  {
+  "slug": "chapus",
+  "title": "chapus",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada chapus en ChapinScript se utiliza para definir un bloque de código alternativo que se ejecuta cuando la condición de un simon es falsa."
+    },
+    {
+      "type": "paragraph",
+      "value": "Funciona como complemento directo de la estructura simon, permitiendo manejar escenarios donde no se cumple una condición específica. Es equivalente a la estructura else en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, chapus representa la ruta alternativa en una bifurcación del flujo del programa, asegurando que siempre exista una respuesta cuando una condición no se cumple."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de chapus es: \n➣ Ejecutar código cuando una condición es falsa\n➣ Complementar estructuras condicionales\n➣ Definir comportamientos alternativos\n➣ Garantizar que el flujo del programa cubra todos los escenarios posibles"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "simon(condicion){\n    // verdadero\n} chapus {\n    // falso\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "chapus no puede utilizarse por sí solo, siempre debe ir acompañado de un bloque simon previo."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Uso básico"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal edad = 16;\n\nsimon(edad >= 18){\n    chotear('Mayor de edad');\n} chapus {\n    chotear('Menor de edad');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Menor de edad"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Validación de datos"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = -5;\n\nsimon(numero > 0){\n    chotear('Número positivo');\n} chapus {\n    chotear('Número no positivo');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Número no positivo"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso con múltiples condiciones (estructura encadenada)"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal nota = 50;\n\nsimon(nota >= 90){\n    chotear('Excelente');\n} chapus {\n    simon(nota >= 60){\n        chotear('Aprobado');\n    } chapus {\n        chotear('Reprobado');\n    }\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Reprobado"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Manejo de flujo alternativo"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "casaca tienePermiso = nel;\n\nsimon(tienePermiso){\n    chotear('Acceso permitido');\n} chapus {\n    chotear('Acceso denegado');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Acceso denegado"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "CHAPUS es una estructura complementaria esencial en ChapinScript que permite definir el comportamiento alternativo cuando una condición no se cumple. Su uso, junto con simon, permite construir lógica completa y robusta en los programas, asegurando que todos los casos posibles sean manejados adecuadamente."
+    }
+  ]
+},
+  {
+  "slug": "simon-ternario",
+  "title": "simon (ternario)",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La estructura simon (ternario) en ChapinScript es una forma abreviada de evaluar una condición y devolver un valor dependiendo de si esta es verdadera o falsa."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite escribir expresiones condicionales en una sola línea, reduciendo la necesidad de usar bloques completos de simon y chapus. Es equivalente al operador ternario en C++ (condición ? valor1 : valor2)."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, simon ternario es una expresión que retorna un valor, no solo ejecuta código, lo que lo hace ideal para asignaciones y evaluaciones rápidas."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal del simon ternario es: \n➣ Evaluar condiciones de forma compacta\n➣ Retornar valores en función de una condición\n➣ Reducir líneas de código\n➣ Simplificar asignaciones condicionales"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "condicion ? valorSiVerdadero : valorSiFalso;"
+    },
+    {
+      "type": "paragraph",
+      "value": "Se utiliza principalmente dentro de asignaciones o expresiones."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Asignación simple"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal edad = 20;\nchisme resultado = edad >= 18 ? 'Mayor de edad' : 'Menor de edad';\n\nchotear(resultado);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Mayor de edad"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Uso directo en impresión"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = 10;\n\nchotear(numero % 2 == 0 ? 'Par' : 'Impar');"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Par"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso en expresiones matemáticas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal a = 5;\ncabal b = 10;\n\ncabal mayor = a > b ? a : b;\nchotear(mayor);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "10"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Uso anidado"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal nota = 85;\n\nchisme resultado = nota >= 90 ? 'Excelente' : nota >= 60 ? 'Aprobado' : 'Reprobado';\nchotear(resultado);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Aprobado"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "SIMON (TERNARIO) es una herramienta poderosa en ChapinScript que permite evaluar condiciones y retornar valores de forma compacta. Es ideal para simplificar código y realizar asignaciones condicionales rápidas. Inspirado en el operador ternario de C++, mejora la legibilidad cuando se usa correctamente, aunque su uso excesivo o anidado puede dificultar la comprensión del código."
+    }
+  ]
+},
+  {
+  "slug": "chiripa",
+  "title": "chiripa",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada chiripa en ChapinScript se utiliza para evaluar una expresión y ejecutar diferentes bloques de código dependiendo de su valor. Es una estructura de control múltiple equivalente al switch en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite manejar múltiples opciones de manera organizada y más legible que múltiples estructuras simon encadenadas. Es ideal cuando se comparan valores contra múltiples posibles casos."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, chiripa evalúa una sola expresión y redirige el flujo del programa hacia el bloque correspondiente definido por las opciones (wasa)."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de chiripa es: \n➣ Evaluar múltiples casos basados en un solo valor\n➣ Mejorar la legibilidad frente a múltiples condiciones\n➣ Organizar flujos de decisión complejos\n➣ Ejecutar bloques específicos según coincidencias exactas"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chiripa(expresion){\n    wasa valor1:\n        // instrucciones\n        cuaje;\n    wasa valor2:\n        // instrucciones\n        cuaje;\n    porsiacaso:\n        // instrucciones por defecto\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Cada caso (wasa) representa una posible coincidencia, mientras que porsiacaso se ejecuta si ningún caso coincide."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Uso básico"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal opcion = 2;\n\nchiripa(opcion){\n    wasa 1:\n        chotear('Opción 1');\n        cuaje;\n    wasa 2:\n        chotear('Opción 2');\n        cuaje;\n    porsiacaso:\n        chotear('Opción no válida');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Opción 2"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Menú de opciones"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal menu = 3;\n\nchiripa(menu){\n    wasa 1:\n        chotear('Ver perfil');\n        cuaje;\n    wasa 2:\n        chotear('Editar perfil');\n        cuaje;\n    wasa 3:\n        chotear('Cerrar sesión');\n        cuaje;\n    porsiacaso:\n        chotear('Opción inválida');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Cerrar sesión"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso con cadenas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chisme color = 'rojo';\n\nchiripa(color){\n    wasa 'rojo':\n        chotear('Color rojo');\n        cuaje;\n    wasa 'azul':\n        chotear('Color azul');\n        cuaje;\n    porsiacaso:\n        chotear('Color desconocido');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Color rojo"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Sin uso de cuaje (caída de casos)"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = 1;\n\nchiripa(numero){\n    wasa 1:\n        chotear('Uno');\n    wasa 2:\n        chotear('Dos');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Uno\nDos"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "CHIRIPA es una estructura de control múltiple en ChapinScript que permite manejar diferentes caminos de ejecución basados en un único valor. Inspirado en switch de C++, mejora la organización del código cuando existen múltiples opciones. Su uso junto con wasa, cuaje y porsiacaso permite construir flujos claros, eficientes y fáciles de mantener."
+    }
+  ]
+},
+  {
+  "slug": "wasa",
+  "title": "wasa",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada wasa en ChapinScript se utiliza dentro de una estructura chiripa para definir una opción o caso específico que será ejecutado cuando el valor evaluado coincida exactamente con el valor del caso."
+    },
+    {
+      "type": "paragraph",
+      "value": "Es equivalente a case en C++ y forma parte de las estructuras de selección múltiple. Cada wasa representa una posible ruta de ejecución dentro de un chiripa."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, wasa actúa como una etiqueta de comparación directa: si la expresión evaluada por chiripa coincide con el valor definido en wasa, entonces el programa comienza a ejecutar las instrucciones asociadas a ese bloque."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de wasa es: \n➣ Definir opciones específicas dentro de chiripa\n➣ Comparar valores exactos contra una expresión evaluada\n➣ Organizar múltiples rutas de ejecución\n➣ Facilitar la lectura del código cuando existen varias alternativas"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chiripa(expresion){\n    wasa valor:\n        // instrucciones\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Cada bloque wasa debe declararse dentro de chiripa y normalmente finaliza con cuaje para evitar que la ejecución continúe hacia el siguiente caso."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Caso numérico simple"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal opcion = 1;\n\nchiripa(opcion){\n    wasa 1:\n        chotear('Elegiste la opción 1');\n        cuaje;\n    porsiacaso:\n        chotear('Opción no válida');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Elegiste la opción 1"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Varios casos dentro de un menú"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal menu = 2;\n\nchiripa(menu){\n    wasa 1:\n        chotear('Inicio');\n        cuaje;\n    wasa 2:\n        chotear('Configuración');\n        cuaje;\n    wasa 3:\n        chotear('Salir');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Configuración"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Caso con cadenas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chisme dia = 'lunes';\n\nchiripa(dia){\n    wasa 'lunes':\n        chotear('Inicio de semana');\n        cuaje;\n    wasa 'viernes':\n        chotear('Casi fin de semana');\n        cuaje;\n    porsiacaso:\n        chotear('Día no identificado');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Inicio de semana"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Caída entre casos al no usar cuaje"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = 1;\n\nchiripa(numero){\n    wasa 1:\n        chotear('Uno');\n    wasa 2:\n        chotear('Dos');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Uno\nDos"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "WASA es una palabra reservada esencial dentro de chiripa en ChapinScript, ya que define cada uno de los casos posibles que puede tomar una estructura de selección múltiple. Inspirado en case de C++, permite organizar decisiones basadas en coincidencias exactas de valor, haciendo el código más claro, estructurado y fácil de mantener."
+    }
+  ]
+},
+  {
+  "slug": "porsiacaso",
+  "title": "porsiacaso",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada porsiacaso en ChapinScript se utiliza dentro de una estructura chiripa para definir un bloque de código que se ejecuta cuando ninguno de los casos definidos con wasa coincide con el valor evaluado."
+    },
+    {
+      "type": "paragraph",
+      "value": "Es equivalente a default en C++ y representa una opción de respaldo que garantiza que siempre exista una respuesta dentro de una estructura de selección múltiple."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, porsiacaso actúa como una red de seguridad en el flujo del programa, manejando cualquier valor inesperado o no contemplado previamente."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de porsiacaso es: \n➣ Ejecutar código cuando no hay coincidencias en los casos\n➣ Manejar valores inesperados o errores de entrada\n➣ Garantizar que siempre exista una salida en la estructura\n➣ Complementar el uso de wasa dentro de chiripa"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chiripa(expresion){\n    wasa valor1:\n        // instrucciones\n        cuaje;\n    porsiacaso:\n        // instrucciones por defecto\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "El bloque porsiacaso es opcional, pero altamente recomendado para evitar comportamientos inesperados."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Caso por defecto básico"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal opcion = 5;\n\nchiripa(opcion){\n    wasa 1:\n        chotear('Opción 1');\n        cuaje;\n    wasa 2:\n        chotear('Opción 2');\n        cuaje;\n    porsiacaso:\n        chotear('Opción no válida');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Opción no válida"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Validación de entradas"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chisme color = 'verde';\n\nchiripa(color){\n    wasa 'rojo':\n        chotear('Color rojo');\n        cuaje;\n    wasa 'azul':\n        chotear('Color azul');\n        cuaje;\n    porsiacaso:\n        chotear('Color desconocido');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Color desconocido"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso sin porsiacaso (no recomendado)"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = 10;\n\nchiripa(numero){\n    wasa 1:\n        chotear('Uno');\n        cuaje;\n    wasa 2:\n        chotear('Dos');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "// No se ejecuta ningún bloque"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Uso para manejo de errores"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal opcion = -1;\n\nchiripa(opcion){\n    wasa 1:\n        chotear('Acción válida');\n        cuaje;\n    porsiacaso:\n        chotear('Error: opción inválida');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Error: opción inválida"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "PORSIACASO es una parte clave de la estructura chiripa en ChapinScript, ya que permite manejar cualquier caso no previsto. Inspirado en default de C++, asegura que el programa tenga un comportamiento definido incluso cuando no hay coincidencias, mejorando la robustez y confiabilidad del código."
+    }
+  ]
+},
+{
+  "slug": "cuaje",
+  "title": "cuaje",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada cuaje en ChapinScript se utiliza para interrumpir inmediatamente la ejecución de una estructura de control, como chiripa o bucles, y salir de ella."
+    },
+    {
+      "type": "paragraph",
+      "value": "Es equivalente a break en C++ y cumple un papel fundamental en el control del flujo del programa, evitando que se ejecuten instrucciones adicionales dentro de una estructura."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, cuaje representa una salida anticipada de un bloque de ejecución, permitiendo detener la ejecución en el momento deseado."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de cuaje es: \n➣ Salir inmediatamente de un chiripa\n➣ Interrumpir la ejecución de un bucle\n➣ Evitar la ejecución de casos adicionales\n➣ Controlar el flujo del programa de manera precisa"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cuaje;"
+    },
+    {
+      "type": "paragraph",
+      "value": "Se utiliza dentro de estructuras como chiripa, vuelta, seguile o dale."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Uso en chiripa"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal opcion = 1;\n\nchiripa(opcion){\n    wasa 1:\n        chotear('Opción 1');\n        cuaje;\n    wasa 2:\n        chotear('Opción 2');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Opción 1"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Evitar caída de casos"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal numero = 1;\n\nchiripa(numero){\n    wasa 1:\n        chotear('Uno');\n        cuaje;\n    wasa 2:\n        chotear('Dos');\n        cuaje;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Uno"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso en bucle (vuelta)"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 0; i < 5; i = i + 1){\n    simon(i == 3){\n        cuaje;\n    }\n    chotear(i);\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Uso en bucle (seguile)"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal i = 0;\n\nseguile(i < 10){\n    simon(i == 5){\n        cuaje;\n    }\n    chotear(i);\n    i = i + 1;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2\n3\n4"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "CUAJE es una instrucción esencial en ChapinScript que permite interrumpir el flujo de ejecución dentro de estructuras como chiripa y bucles. Inspirado en break de C++, su uso correcto evita ejecuciones innecesarias y permite un control preciso del comportamiento del programa."
+    }
+  ]
+},
+  {
+  "slug": "vuelta",
+  "title": "vuelta",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada vuelta en ChapinScript se utiliza para crear bucles controlados que se repiten un número determinado de veces. Es equivalente a la estructura for en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "Permite ejecutar un bloque de código mientras se cumple una condición específica, generalmente controlada por un contador. Es ideal cuando se conoce de antemano cuántas veces debe repetirse una acción."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, vuelta combina tres elementos en una sola estructura: inicialización, condición y actualización, permitiendo un control preciso del ciclo de ejecución."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de vuelta es: \n➣ Repetir un bloque de código un número definido de veces\n➣ Controlar iteraciones mediante un contador\n➣ Automatizar tareas repetitivas\n➣ Recorrer estructuras como arreglos o listas"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(inicializacion; condicion; actualizacion){\n    // instrucciones\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "La estructura incluye tres partes: inicialización (inicio del contador), condición (hasta cuándo se repite) y actualización (cómo cambia en cada iteración)."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Bucle básico"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 0; i < 5; i = i + 1){\n    chotear(i);\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2\n3\n4"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Contador descendente"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 5; i > 0; i = i - 1){\n    chotear(i);\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "5\n4\n3\n2\n1"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso con condición interna"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 0; i < 10; i = i + 1){\n    simon(i % 2 == 0){\n        chotear(i);\n    }\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n2\n4\n6\n8"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Uso con cuaje"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 0; i < 10; i = i + 1){\n    simon(i == 5){\n        cuaje;\n    }\n    chotear(i);\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2\n3\n4"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "VUELTA es una estructura de repetición fundamental en ChapinScript que permite ejecutar un bloque de código múltiples veces con control preciso. Inspirado en for de C++, es ideal cuando se conoce la cantidad de iteraciones, facilitando la automatización de tareas y el recorrido de datos."
+    }
+  ]
+},
+  {
+  "slug": "seguile",
+  "title": "seguile",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada seguile en ChapinScript se utiliza para crear bucles que se repiten mientras una condición sea verdadera. Es equivalente a la estructura while en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "A diferencia de vuelta, seguile no requiere conocer previamente el número de iteraciones, ya que el bucle depende completamente de una condición lógica que se evalúa antes de cada repetición."
+    },
+    {
+      "type": "paragraph",
+      "value": "A nivel conceptual, seguile representa un ciclo controlado por condición, donde el flujo del programa continúa ejecutándose hasta que dicha condición deja de cumplirse."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de seguile es: \n➣ Repetir un bloque de código mientras una condición sea verdadera\n➣ Ejecutar bucles cuando no se conoce el número exacto de repeticiones\n➣ Controlar procesos dinámicos\n➣ Permitir iteraciones basadas en eventos o estados"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "seguile(condicion){\n    // instrucciones\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "La condición se evalúa antes de cada iteración. Si es falsa desde el inicio, el bloque nunca se ejecuta."
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Bucle básico"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal i = 0;\n\nseguile(i < 5){\n    chotear(i);\n    i = i + 1;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2\n3\n4"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "2. Condición dependiente de usuario"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal contador = 0;\n\nseguile(contador < 3){\n    chotear('Iteración');\n    contador = contador + 1;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "Iteración\nIteración\nIteración"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "3. Uso con cuaje"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal i = 0;\n\nseguile(i < 10){\n    simon(i == 4){\n        cuaje;\n    }\n    chotear(i);\n    i = i + 1;\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2\n3"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "4. Posible bucle infinito"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "seguile(deplano){\n    chotear('Esto se repite para siempre');\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "// Bucle infinito"
+    },
+    {
+      "type": "paragraph",
+      "value": "________________________________________________________________________________________________________________________________"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "SEGUILE es una estructura de repetición en ChapinScript que permite ejecutar código mientras una condición sea verdadera. Inspirado en while de C++, es ideal para escenarios dinámicos donde no se conoce el número de iteraciones, aunque debe usarse con cuidado para evitar bucles infinitos."
+    }
+  ]
+},
+  {
+  "slug": "dale",
+  "title": "dale",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada dale en ChapinScript se utiliza para crear un bucle que se ejecuta al menos una vez antes de evaluar una condición. Es equivalente a la estructura do-while en C++."
+    },
+    {
+      "type": "paragraph",
+      "value": "A diferencia de seguile, la condición se evalúa al final del ciclo, lo que garantiza que el bloque de código se ejecute al menos una vez."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de dale es: \n➣ Ejecutar código al menos una vez\n➣ Validar condiciones después de ejecutar\n➣ Manejar entradas o procesos iniciales\n➣ Crear bucles controlados por condición posterior"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "dale {\n    // instrucciones\n} seguile(condicion);"
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Ejecución garantizada"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal i = 0;\n\ndale {\n    chotear(i);\n    i = i + 1;\n} seguile(i < 3);"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "0\n1\n2"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "DALE permite ejecutar un bloque de código al menos una vez antes de evaluar una condición. Inspirado en do-while de C++, es útil cuando se necesita ejecutar lógica inicial sin importar la condición."
+    }
+  ]
+},
+  {
+    "slug": "cuaje",
+    "title": "cuaje",
+    "category": "Documentación",
+    "description": "Para salir de un bucle o de un switch",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cuaje;"
+      }
+    ]
+  },
+  {
+  "slug": "chanin",
+  "title": "chanin",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada chanin en ChapinScript se utiliza para saltar el resto de las instrucciones dentro de una iteración actual de un bucle y continuar con la siguiente."
+    },
+    {
+      "type": "paragraph",
+      "value": "Es equivalente a continue en C++ y permite controlar el flujo dentro de ciclos."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de chanin es: \n➣ Saltar instrucciones dentro de un bucle\n➣ Continuar con la siguiente iteración\n➣ Evitar ejecuciones innecesarias\n➣ Filtrar condiciones dentro de ciclos"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "chanin;"
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Saltar números pares"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vuelta(cabal i = 0; i < 5; i = i + 1){\n    simon(i % 2 == 0){\n        chanin;\n    }\n    chotear(i);\n}"
+    },
+    {
+      "type": "paragraph",
+      "value": "Salida:"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "1\n3"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "CHANIN permite saltar la iteración actual de un bucle y continuar con la siguiente. Inspirado en continue de C++, es útil para controlar flujos dentro de ciclos."
+    }
+  ]
+},
+  {
+  "slug": "vonos",
+  "title": "vonos",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    {
+      "type": "heading",
+      "value": "Descripción general"
+    },
+    {
+      "type": "paragraph",
+      "value": "La palabra reservada vonos en ChapinScript se utiliza para devolver un valor desde una función y finalizar su ejecución."
+    },
+    {
+      "type": "paragraph",
+      "value": "Es equivalente a return en C++ y permite enviar resultados desde una función hacia el lugar donde fue llamada."
+    },
+    {
+      "type": "heading",
+      "value": "Propósito y comportamiento"
+    },
+    {
+      "type": "paragraph",
+      "value": "El propósito principal de vonos es: \n➣ Devolver valores desde funciones\n➣ Finalizar la ejecución de una función\n➣ Transferir resultados\n➣ Controlar el flujo de salida"
+    },
+    {
+      "type": "heading",
+      "value": "Sintaxis"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "vonos valor;"
+    },
+    {
+      "type": "heading",
+      "value": "Ejemplos de uso"
+    },
+    {
+      "type": "subtitle",
+      "value": "1. Retornar un valor"
+    },
+    {
+      "type": "code",
+      "label": "‹/› chapinScript",
+      "value": "cabal suma(cabal a, cabal b){\n    vonos a + b;\n}"
+    },
+    {
+      "type": "subtitle",
+      "value": "Resumen"
+    },
+    {
+      "type": "paragraph",
+      "value": "VONOS es una instrucción esencial para devolver resultados desde funciones. Inspirado en return de C++, permite controlar la salida de datos en ChapinScript."
+    }
+  ]
+},
+  {
+  "slug": "cabal",
+  "title": "cabal",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada cabal en ChapinScript se utiliza para declarar variables de tipo entero, es decir, números sin parte decimal." },
+    { "type": "paragraph", "value": "Es equivalente a int en C++ y se utiliza ampliamente para contadores, índices y cálculos numéricos simples." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de cabal es: \n➣ Almacenar números enteros\n➣ Realizar operaciones matemáticas\n➣ Controlar bucles e índices\n➣ Representar cantidades discretas" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "cabal numero = 10;" },
+    { "type": "heading", "value": "Ejemplos de uso" },
+    { "type": "subtitle", "value": "1. Declaración básica" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "cabal edad = 25;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CABAL representa números enteros en ChapinScript. Inspirado en int de C++, es uno de los tipos más utilizados para operaciones numéricas." }
+  ]
+},
+  {
+    "slug": "cabal-array",
+    "title": "cabal []",
+    "category": "Documentación",
+    "description": "Array de tipo enter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cabal misNumeros[5] = {1, 2, 3, 4, 5};"
+      }
+    ]
+  },
+  {
+  "slug": "pisto",
+  "title": "pisto",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada pisto se utiliza para declarar números con decimales de precisión simple." },
+    { "type": "paragraph", "value": "Es equivalente a float en C++ y se usa cuando no se requiere alta precisión." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de pisto es: \n➣ Representar números decimales\n➣ Realizar cálculos con fracciones\n➣ Usar menor memoria que double" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "pisto precio = 10.5;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "PISTO permite manejar números decimales simples en ChapinScript. Inspirado en float de C++." }
+  ]
+},
+  {
+    "slug": "pisto-array",
+    "title": "pisto []",
+    "category": "Documentación",
+    "description": "Array de tipo decimal",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pisto misNumeros[3] = {10.5,99.99, 5.25};"
+      }
+    ]
+  },
+  {
+  "slug": "pistazo",
+  "title": "pistazo",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada pistazo se utiliza para números decimales de alta precisión." },
+    { "type": "paragraph", "value": "Es equivalente a double en C++ y permite mayor exactitud en cálculos." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de pistazo es: \n➣ Manejar números de alta precisión\n➣ Realizar cálculos científicos o financieros\n➣ Evitar errores de redondeo" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "pistazo valor = 10.123456;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "PISTAZO es un tipo de dato de alta precisión en ChapinScript, inspirado en double de C++." }
+  ]
+},
+  {
+    "slug": "pistazo-array",
+    "title": "pistazo []",
+    "category": "Documentación",
+    "description": "Array de tipo decimal preciso",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "pistazo miDistancia[2] = {345.6789, 12.3456};"
+      }
+    ]
+  },
+  {
+  "slug": "cachito",
+  "title": "cachito",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada cachito se utiliza para almacenar un solo carácter." },
+    { "type": "paragraph", "value": "Es equivalente a char en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de cachito es: \n➣ Representar un carácter individual\n➣ Manejar texto a bajo nivel\n➣ Procesar símbolos o letras" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "cachito letra = 'A';" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CACHITO permite manejar caracteres individuales, inspirado en char de C++." }
+  ]
+},
+  {
+    "slug": "cachito-array",
+    "title": "cachito []",
+    "category": "Documentación",
+    "description": "Array de tipo caracter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cachito misIniciales[4] = {'P', 'R', 'O', 'Y', 'E', 'C', 'T'};"
+      }
+    ]
+  },
+  {
+  "slug": "casaca",
+  "title": "casaca",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada casaca representa valores lógicos verdadero o falso." },
+    { "type": "paragraph", "value": "Es equivalente a bool en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de casaca es: \n➣ Evaluar condiciones\n➣ Controlar flujos de decisión\n➣ Representar estados lógicos" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "casaca activo = deplano;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CASACA permite trabajar con valores booleanos en ChapinScript, inspirado en bool de C++." }
+  ]
+},
+  {
+    "slug": "casaca-array",
+    "title": "casaca []",
+    "category": "Documentación",
+    "description": "Array de tipo bool",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "casaca respuestas[3] = {true, false, true};"
+      }
+    ]
+  },
+  {
+  "slug": "chisme",
+  "title": "chisme",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada chisme se utiliza para almacenar cadenas de texto, como palabras o frases completas." },
+    { "type": "paragraph", "value": "Es equivalente a string en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de chisme es: \n➣ Manejar texto\n➣ Almacenar mensajes\n➣ Concatenar información\n➣ Mostrar datos al usuario" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "chisme nombre = 'Juan';" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CHISME es el tipo de dato para texto en ChapinScript, inspirado en string de C++." }
+  ]
+},
+  {
+    "slug": "chisme-array",
+    "title": "chisme []",
+    "category": "Documentación",
+    "description": "Array de tipo texto",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "chisme misNumeros[5] = {\"Hola\", \"Mundo\", \"Ejemplo\", \"de\", \"uso\"};"
+      }
+    ]
+  },
+  {
+  "slug": "fijo",
+  "title": "fijo",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada fijo en ChapinScript se utiliza para declarar variables cuyo valor no puede cambiar después de ser asignado." },
+    { "type": "paragraph", "value": "Es equivalente a const en C++ y se utiliza para proteger datos que deben permanecer constantes durante toda la ejecución del programa." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de fijo es: \n➣ Evitar modificaciones accidentales\n➣ Definir valores constantes\n➣ Mejorar la seguridad del código\n➣ Facilitar la lectura del programa" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "fijo cabal PI = 3;" },
+    { "type": "heading", "value": "Ejemplos de uso" },
+    { "type": "subtitle", "value": "1. Constante simple" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "fijo cabal edad = 18;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "FIJO permite declarar valores constantes en ChapinScript. Inspirado en const de C++, evita modificaciones y mejora la seguridad del código." }
+  ]
+},
+  {
+  "slug": "banda",
+  "title": "banda",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada banda en ChapinScript se utiliza para definir una clase, que es un molde para crear objetos." },
+    { "type": "paragraph", "value": "Es equivalente a class en C++ y permite implementar programación orientada a objetos." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de banda es: \n➣ Definir estructuras de datos complejas\n➣ Crear objetos\n➣ Encapsular datos y comportamiento\n➣ Facilitar reutilización de código" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "banda Persona {\n    chisme nombre;\n    cabal edad;\n}" },
+    { "type": "heading", "value": "Ejemplos de uso" },
+    { "type": "subtitle", "value": "1. Clase básica" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "banda Persona {\n    chisme nombre;\n}" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "BANDA permite definir clases en ChapinScript, inspirado en class de C++, siendo la base de la programación orientada a objetos." }
+  ]
+},
+  {
+  "slug": "vos",
+  "title": "vos",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada vos en ChapinScript se utiliza para referirse a la instancia actual de una clase." },
+    { "type": "paragraph", "value": "Es equivalente a this en C++ y se utiliza dentro de métodos de clase." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de vos es: \n➣ Referirse al objeto actual\n➣ Acceder a atributos de la clase\n➣ Diferenciar variables locales de atributos\n➣ Mejorar claridad del código" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "vos.nombre = 'Juan';" },
+    { "type": "heading", "value": "Ejemplos de uso" },
+    { "type": "subtitle", "value": "1. Uso dentro de clase" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "banda Persona {\n    chisme nombre;\n\n    nimais setNombre(chisme nombre){\n        vos.nombre = nombre;\n    }\n}" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "VOS permite referirse a la instancia actual de una clase en ChapinScript, inspirado en this de C++." }
+  ]
+},
+{
+  "slug": "nimais",
+  "title": "nimais",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada nimais en ChapinScript se utiliza para declarar funciones que no devuelven ningún valor." },
+    { "type": "paragraph", "value": "Es equivalente a void en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de nimais es: \n➣ Definir funciones sin retorno\n➣ Ejecutar acciones\n➣ Separar lógica de resultados\n➣ Mejorar organización del código" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "nimais saludar(){\n    chotear('Hola');\n}" },
+    { "type": "heading", "value": "Ejemplos de uso" },
+    { "type": "subtitle", "value": "1. Función simple" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "nimais imprimir(){\n    chotear('Hola mundo');\n}" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "NIMAIS permite declarar funciones sin valor de retorno en ChapinScript, inspirado en void de C++." }
+  ]
+},
+  {
+  "slug": "calale",
+  "title": "calale",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada calale en ChapinScript se utiliza para definir un bloque de código donde se anticipa que puede ocurrir un error durante la ejecución." },
+    { "type": "paragraph", "value": "Es equivalente a try en C++ y permite manejar errores de forma controlada." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de calale es: \n➣ Encapsular código riesgoso\n➣ Prevenir fallos inesperados\n➣ Preparar manejo de errores\n➣ Mejorar la estabilidad del programa" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "calale {\n    // código\n} atrapalo(e){\n    // manejo\n}" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CALALE permite manejar errores potenciales en ChapinScript, inspirado en try de C++." }
+  ]
+},
+  {
+  "slug": "atrapalo",
+  "title": "atrapalo",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada atrapalo se utiliza para capturar y manejar errores generados en un bloque calale." },
+    { "type": "paragraph", "value": "Es equivalente a catch en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de atrapalo es: \n➣ Capturar errores\n➣ Manejar excepciones\n➣ Evitar que el programa falle\n➣ Permitir recuperación del sistema" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "atrapalo(e){\n    chotear(e.quepaso());\n}" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "ATRAPALO permite manejar errores capturados, inspirado en catch de C++." }
+  ]
+},
+  {
+  "slug": "morongazo",
+  "title": "morongazo",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada morongazo se utiliza para lanzar manualmente un error en el programa." },
+    { "type": "paragraph", "value": "Es equivalente a throw en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de morongazo es: \n➣ Generar errores manualmente\n➣ Controlar fallos\n➣ Validar condiciones críticas\n➣ Forzar manejo de excepciones" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "morongazo estrenar clavo('Error');" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "MORONGAZO permite lanzar errores en ChapinScript, inspirado en throw de C++." }
+  ]
+},
+  {
+  "slug": "barrio",
+  "title": "barrio",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada barrio define miembros públicos dentro de una clase." },
+    { "type": "paragraph", "value": "Es equivalente a public en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de barrio es: \n➣ Permitir acceso externo\n➣ Definir interfaces públicas\n➣ Facilitar uso de objetos" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "barrio:\n    chisme nombre;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "BARRIO define acceso público en ChapinScript, inspirado en public de C++." }
+  ]
+},
+  {
+  "slug": "caquero",
+  "title": "caquero",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada caquero define miembros privados dentro de una clase." },
+    { "type": "paragraph", "value": "Es equivalente a private en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal de caquero es: \n➣ Restringir acceso\n➣ Proteger datos\n➣ Implementar encapsulación\n➣ Evitar uso indebido" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "caquero:\n    cabal edad;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "CAQUERO permite encapsular datos en ChapinScript, inspirado en private de C++." }
+  ]
+},
+  {
+  "slug": "deplano-nel",
+  "title": "deplano / nel",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "deplano y nel representan valores booleanos verdadero y falso respectivamente." },
+    { "type": "paragraph", "value": "Son equivalentes a true y false en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal es: \n➣ Evaluar condiciones\n➣ Controlar flujo lógico\n➣ Representar estados binarios" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "casaca activo = deplano;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "DEPLANO y NEL representan valores booleanos en ChapinScript, inspirados en true y false de C++." }
+  ]
+},
+  {
+  "slug": "inutil",
+  "title": "inutil",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada inutil representa la ausencia de valor o referencia." },
+    { "type": "paragraph", "value": "Es equivalente a null en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal es: \n➣ Indicar valor vacío\n➣ Inicializar variables\n➣ Manejar referencias inexistentes" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "chisme nombre = inutil;" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "INUTIL representa valores nulos en ChapinScript, inspirado en null de C++." }
+  ]
+},
+  {
+    "slug": "shute",
+    "title": "shute",
+    "category": "Documentación",
+    "description": "Para traer librerías externas",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "shute \"nombre_de_Libreria.h\""
+      }
+    ]
+  },
+  {
+    "slug": "traer",
+    "title": "traer",
+    "category": "Documentación",
+    "description": "Para el método Getter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "cabal traerEnergia() { vonos vos->energia; }"
+      }
+    ]
+  },
+  {
+    "slug": "meter",
+    "title": "meter",
+    "category": "Documentación",
+    "description": "Para el método Setter",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "nimais meterEnergia(cabal e) { vos->energia = e; }"
+      }
+    ]
+  },
+  {
+    "slug": "firme",
+    "title": "firme",
+    "category": "Documentación",
+    "description": "Usar algo como firme",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "firme cabal contadorTotal = 0;"
+      }
+    ]
+  },
+  {
+    "slug": "inutil",
+    "title": "inutil",
+    "category": "Documentación",
+    "description": "Define algo vacío",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "Robot* miRobot = inutil;"
+      }
+    ]
+  },
+  {
+  "slug": "estrenar",
+  "title": "estrenar",
+  "category": "Documentación",
+  "description": "",
+  "content": [
+    { "type": "heading", "value": "Descripción general" },
+    { "type": "paragraph", "value": "La palabra reservada estrenar se utiliza para crear nuevas instancias de objetos o errores." },
+    { "type": "paragraph", "value": "Es equivalente a new en C++." },
+    { "type": "heading", "value": "Propósito y comportamiento" },
+    { "type": "paragraph", "value": "El propósito principal es: \n➣ Crear objetos\n➣ Instanciar clases\n➣ Manejar memoria dinámica" },
+    { "type": "heading", "value": "Sintaxis" },
+    { "type": "code", "label": "‹/› chapinScript", "value": "Persona p = estrenar Persona();" },
+    { "type": "subtitle", "value": "Resumen" },
+    { "type": "paragraph", "value": "ESTRENAR permite crear instancias en ChapinScript, inspirado en new de C++." }
+  ]
+},
+  {
+    "slug": "clavo",
+    "title": "clavo",
+    "category": "Documentación",
+    "description": "La clase base de todos los errores",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "atrapalo (Clavo e) { ... }"
+      }
+    ]
+  },
+  {
+    "slug": "granclavo",
+    "title": "granclavo",
+    "category": "Documentación",
+    "description": "Un error que pasa de la nada mientras corre el codigo",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "estrenar GranClavo(\"Se tronó esto\");"
+      }
+    ]
+  },
+  {
+    "slug": "quepaso",
+    "title": ".quepaso()",
+    "category": "Documentación",
+    "description": "Muestra el \"que paso\" (mensaje) de por qué trono el código",
+    "content": [
+      {
+        "type": "heading",
+        "value": "Examples"
+      },
+      {
+        "type": "code",
+        "label": "Sintaxis básica",
+        "value": "barrio nimais procesarDato(cabal numero) {\n    calale {\n        simon (numero == 0) {\n            morongazo estrenar GranClavo(\"No podés dividir entre la nada, vos.\");\n        }\n    } atrapalo (GranClavo e) {\n        chotear(\"Fijate que: \" + e.quepaso());\n    }\n}"
+      }
+    ]
+  }
+]
